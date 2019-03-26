@@ -124,7 +124,7 @@ def extract_feature(model,dataloaders):
         else:
             ff = torch.FloatTensor(n,2048).zero_()
         if opt.PCB:
-            ff = torch.FloatTensor(n,2048,6).zero_() # we have six parts
+            ff = torch.FloatTensor(n,2048,3).zero_() # we have six parts
         for i in range(2):
             if(i==1):
                 img = fliplr(img)

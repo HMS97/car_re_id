@@ -228,7 +228,6 @@ def train_model(model, criterion, optimizer, scheduler, num_epochs=25):
                     save_network(model, epoch)
                 draw_curve(epoch)
 
-        print()
 
     time_elapsed = time.time() - since
     print('Training complete in {:.0f}m {:.0f}s'.format(
